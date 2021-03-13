@@ -1,8 +1,9 @@
 import React, { FC } from "react";
+import { CurrentWeather } from "./CurrentWeather";
 
 export const Sidebar: FC = () => {
 	return (
-		<div className="flex flex-col items-center h-screen col-span-2 bg-black text-white px-10 py-8 justify-between font-semibold ">
+		<div className="flex flex-col items-center h-screen col-span-2 bg-black text-white px-10 py-8 space-y-20 font-semibold">
 			<div className="flex items-center w-full justify-between">
 				<div>
 					<h1 className="text-3xl">Airstream</h1>
@@ -17,6 +18,7 @@ export const Sidebar: FC = () => {
 					</button>
 				</div>
 			</div>
+			<CurrentWeather />
 		</div>
 	);
 };
