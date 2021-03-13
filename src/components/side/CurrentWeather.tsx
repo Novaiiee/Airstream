@@ -18,7 +18,7 @@ export const CurrentWeather: FC = () => {
 				<div className="space-x-4 font-light flex items-center">
 					<h3>Feels like {weather.current.feelslike_c} °c</h3>
 					<h3>•</h3>
-					<h3>{weather.current.is_day ? "Night" : "Day"}</h3>
+					<h3>{!weather.current.is_day ? "Night" : "Day"}</h3>
 					<h3>•</h3>
 					<h3>Humidity {weather.current.humidity}</h3>
 				</div>

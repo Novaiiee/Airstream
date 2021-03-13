@@ -27,9 +27,9 @@ export const WeatherProvider: FC = ({ children }) => {
 		}
 	}, []);
 
-	useEffect(() => {
-		search("toronto");
-	}, [search]);
+	// useEffect(() => {
+	// 	search("toronto");
+	// }, [search]);
 
 	return <WeatherContext.Provider value={{ search, weather }}>{children}</WeatherContext.Provider>;
 };
